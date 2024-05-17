@@ -1,68 +1,41 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Page Title for me</title>
+		<title>Intro to Javascript</title>
+		<script>
+			function add2Numbers()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML = num1 + num2;
+			}
+			function avarage()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 + num2 ) / 2.0;
+			}
+		</script> 
 	</head>
 	<body>
-<div> 
-
-	B 1 
-
-</div> 
-
-<div style="width:100%;background:#F0F0F0;float:left"> 
-
-    <div style="width:30%;background:#F00000;float:left"> 
-
-			B 2.1  
-
-		</div>  
-
-    <div  style="width:70%;background:#00F000;float:left"> 
-
-		<div> 
-
-			<div style="width:50%;background:#00F0F0;float:left"> 
-
-				B 2.2.1.1 
-
-			</div>  
-
-			<div style="width:50%;background:#F0F000;float:left"> 
-
-				B 2.2.1.2 
-
-			</div>  
-
-		</div> 
-
-		<div> 
-
-			B 2.2.2 
-
-		</div> 
-
-	</div>  
-
-</div> 
-
-<div> 
-
-	B 3 
-
-</div> 	
-
-		I koa do ollas einischreibin und des zeigt ma des da oa
-		<h1>This is a Heading</h1>
-		<h2>This is a second Heading</h2>
-		<p>This is a paragraph.</p>
+		<h1 id="my heading">
+			We're going to calculate
+		</h1>
 		<p>
-			<a href="page2.html">
-				Hier geht es zur zweiten Seite
-			</a>
-			<a href="Page3.html">
-				Hier geht es zur dritten Seite
-			</a>
+			<form>
+				<label for="fnum1">Erste Zahl:</label>
+				<input type="text" id="fnum1" name="fnum1"><br><br>
+				<label for="fnum2">Zweite Zahl:</label>
+				<input type="text" id="fnum2" name="fnum2"><br><br>
+			</form> 
+		</p>
+		<button onclick="add2Numbers()">
+			Change the world
+		</button>
+		<button onclick="avarage()">
+			Change the world 2
+		</button>
+		<p id="result" >
 		</p>
 	</body>
-</html> 
+</html>
