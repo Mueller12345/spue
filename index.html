@@ -15,6 +15,23 @@
 				var num2 = document.getElementById("fnum2").value * 1.0;
 				document.getElementById("result").innerHTML =  ( num1 + num2 ) / 2.0;
 			}
+			function product()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 * num2 ) * 1.0;
+			}function difference()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 - num2 ) * 1.0;
+			}
+			function division()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 / num2 ) * 1.0;
+			}
 		</script> 
 	</head>
 	<body>
@@ -30,10 +47,19 @@
 			</form> 
 		</p>
 		<button onclick="add2Numbers()">
-			Change the world
+			addition
 		</button>
 		<button onclick="avarage()">
-			Change the world 2
+			avarage
+		</button>
+		<button onclick="product()">
+			product
+		</button>
+		<button onclick="difference()">
+			difference
+		</button>
+		<button onclick="division()">
+			division
 		</button>
 		<p id="result" >
 		</p>
