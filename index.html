@@ -32,7 +32,14 @@
 				var num2 = document.getElementById("fnum2").value * 1.0;
 				document.getElementById("result").innerHTML =  ( num1 / num2 ) * 1.0;
 			}
-		</script> 
+			function potenzieren ()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				
+				document.getElementById("result").innerHTML = Math.pow( num1, num2 ) * 1.0;
+			}
+		</script>
 	</head>
 	<body>
 		<h1 id="my heading">
@@ -60,6 +67,9 @@
 		</button>
 		<button onclick="division()">
 			division
+		</button>
+		<button onclick="potenzieren()">
+			potenzieren
 		</button>
 		<p id="result" >
 		</p>
